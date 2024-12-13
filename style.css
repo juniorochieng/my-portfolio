@@ -25,7 +25,8 @@ nav ul li a{
   color: blue;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0..3s ease;
+  transition: color 0.3s ease;
+  position:reletive;
 }
 nav ul li a:hover;{
   color:blue;
@@ -58,9 +59,24 @@ section{
     gap:5px;
     max-width:400px;
     margin:0 {auto;}
+    input,textarea,button{
+     width:100%;
+     padding:10px;
+     font-size:1rem;
+      boder:1px solid #cc;
+      boder-radies:5px;
+    }
+  button{
+    background-color:#333;
+    color:white;
+    cursor:pointer;
+    transition:backgraund-color:03s
+    button:hove{
+      backgraund-color:#ff9800;
+    }
 section h2{
   color:#333;
-  margin-botton:#333;
+  margin-botton:10px;
 footer{
   background-color: #333;
   color: #fff;
@@ -70,3 +86,22 @@ footer{
   bottom: 0;
   width: 100%;
 }
+nav ul il a:before{
+  contet:'';
+  position:adsolute;
+  left:0;
+  bottom:0;
+  height:2px
+  width:0;
+  background:#ff9800;
+  transihon:width0.3s case-in-out;
+}
+  nav ul li a:hover::before{
+    width:100%;
+ @media<max-width:768px{
+   nav ul{
+     flex-direction:colomn;
+   }
+     project{
+       text-align:center;
+     }
